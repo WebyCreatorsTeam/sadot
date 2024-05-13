@@ -1,0 +1,15 @@
+@font-face {
+    font-family: "Comix";
+    src: url("../assets/fonts/comix/ComixNo2CLM-Medium.ttf") format(truetype);
+}
+
+$backgroundColorLight: #E7D7CD;
+
+body {
+    margin: 0%;
+    padding: 0%;
+    background-color: $backgroundColorLight;
+    font-family: "Comix";
+}
+
+@import "./components/header";

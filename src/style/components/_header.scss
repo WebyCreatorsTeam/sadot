@@ -1,0 +1,42 @@
+header {
+    background-color: #928C68;
+    text-align: center;
+    padding-bottom: 5%;
+
+    p {
+        font-size: 1.75rem;
+        max-width: 1050px;
+        margin: 0 auto;
+        line-height: 59px;
+
+        span {
+            font-size: 2.5rem;
+        }
+    }
+
+    &>p {
+        padding: 3% 0% 4%;
+        text-align: justify;
+    }
+
+    .ayelet_info {
+        background-color: $backgroundColorLight;
+        display: flex;
+
+        p {
+            text-align: start;
+            margin: auto auto;
+            line-height: 47px;
+        }
+
+        div {
+            max-width: 710px;
+            background-color: aqua;
+
+            img {
+                width: 100%;
+                height: 100%;
+            }
+        }
+    }
+}
