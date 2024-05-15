@@ -34,7 +34,8 @@ body {
 }
 
 h2 {
-    font-size: 3.4rem;
+    font-size: clamp(1.875rem, 1.603vw + 1.514rem, 3.438rem);
+    // font-size: 3.4rem;
     margin-right: 2%;
     font-weight: 500;
     text-decoration: underline;
