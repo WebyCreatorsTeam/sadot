@@ -21,9 +21,6 @@
     src: local('Amatica SC Bold'), url('../assets/fonts/Amatica/AmaticaSC-Bold.woff') format('woff');
 }
 
-// @import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&display=swap');
-
-
 $backgroundColorLight: #E7D7CD;
 
 body {
@@ -35,11 +32,20 @@ body {
 
 h2 {
     font-size: clamp(1.875rem, 1.603vw + 1.514rem, 3.438rem);
-    // font-size: 3.4rem;
     margin-right: 2%;
     font-weight: 500;
     text-decoration: underline;
     text-underline-offset: 15%;
+}
+
+p {
+    font-size: clamp(1.125rem, 0.641vw + 0.981rem, 1.75rem);
+}
+
+a {
+    font-size: clamp(1.125rem, 0.641vw + 0.981rem, 1.75rem);
+    text-decoration: none;
+    color: black;
 }
 
 .workshop__options {
@@ -108,8 +114,22 @@ h2 {
 }
 
 footer {
-    &>h2 {
-        text-align: center;
+    text-align: center;
+
+    // &>h2 {}
+
+    .footer-info {
+        width: 35vw;
+        margin: 3% auto;
+        justify-content: space-between;
+        display: flex;
+        
+        @media screen and (max-width: 1000px) {
+            width: 90vw;
+            // padding: 0% 3%;
+            // width: 95vw;
+        }
+
     }
 }
 
