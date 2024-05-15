@@ -107,5 +107,11 @@ h2 {
     }
 }
 
+footer {
+    &>h2 {
+        text-align: center;
+    }
+}
+
 @import "./components/header";
 @import "./components/works";
