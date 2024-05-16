@@ -116,14 +116,12 @@ a {
 footer {
     text-align: center;
 
-    // &>h2 {}
-
     .footer-info {
         width: 35vw;
         margin: 3% auto;
         justify-content: space-between;
         display: flex;
-        
+
         @media screen and (max-width: 1000px) {
             width: 90vw;
             // padding: 0% 3%;
