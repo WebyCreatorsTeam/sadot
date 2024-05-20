@@ -1,32 +1,42 @@
 import { FC } from 'react'
-import path from '../assets/footer-icons/path.png'
-import waze from '../assets/footer-icons/waze.png'
-import whatsap from '../assets/footer-icons/whatsap.png'
+import path from '/icons/path.svg'
+import waze from '/icons/waze.svg'
+import call from '/icons/call.svg'
+import whatsap from '/icons/whatsap.svg'
 
 const Footer: FC = () => {
     return (
         <footer>
-            <h2>צרו קשר:</h2>
+            <h2>דרכי הגעה</h2>
             <div className='footer-info'>
                 <div>
-                    <img src={whatsap} alt="" width={63} height={63} />
+                    <a href="https://maps.app.goo.gl/f54FHP9cDHFJTjy49">
+                        <img src={waze} alt="" width={50} height={50} />
+                    </a>
                 </div>
                 <div>
-                    <img src={waze} alt="" width={63} height={63} />
+                    <img src={path} alt="" width={50} height={50} />
+                </div>
+            </div>
+            <p>מושב שוקדה</p>
+            <div className='footer-info'>
+                <div>
+                    <img src={whatsap} alt="" width={50} height={50} />
                 </div>
                 <div>
-                    <img src={path} alt="" width={63} height={63} />
+                    <a href="tel:0506353830">
+                        <img src={call} alt="" width={50} height={50} />
+                    </a>
                 </div>
-            </div>
-            <div>
-                <a href="tel:0506353830">050-635-3830</a>
-            </div>
-            <div>
-                <p>מושב שוקדה</p>
             </div>
             <div>
                 <p>
-                לתשלום בביט לחץ כאן
+                    לתשלום בביט ניתן להעביר למספר טלפון:
+                </p>
+                <p>
+                    <a href="tel:0506353830">
+                        050-635-3830
+                    </a>
                 </p>
             </div>
         </footer>
