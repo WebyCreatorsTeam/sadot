@@ -1,5 +1,5 @@
-import Frame1 from '../../assets/carusel-images/Frame1.png'
-import Frame4 from '../../assets/carusel-images/Frame4.png'
+import Frame1 from '/carusel-images/Frame1.png'
+import Frame4 from '/carusel-images/Frame4.png'
 import { IWorks } from '../interface'
 
 
