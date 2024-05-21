@@ -1,9 +1,9 @@
-import Flowers from '/carusel-images/flowers.jpg'
-import Flowers1 from '/carusel-images/flowers1.jpg'
-import Lev from '/carusel-images/lev.jpg'
-import Pergula from '/carusel-images/pergula.jpg'
-import Wine from '/carusel-images/wine.jpg'
-import Women from '/carusel-images/women.jpg'
+import Flowers from '/carusel-images/flowers.webp'
+import Flowers1 from '/carusel-images/flowers1.webp'
+import Lev from '/carusel-images/lev.webp'
+import Pergula from '/carusel-images/pergula.webp'
+import Wine from '/carusel-images/wine.webp'
+import Women from '/carusel-images/women.webp'
 import { IWorks } from '../interface'
 
 

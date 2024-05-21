@@ -1,0 +1,57 @@
+.workshop__options {
+    margin: 5% auto;
+    display: grid;
+    justify-items: center;
+    grid-template-columns: repeat(auto-fit, minmax(323px, 1fr));
+
+    &--item {
+        position: relative;
+
+        @media screen and (max-width: 1300px) {
+            margin: 5% 0%;
+        }
+
+        img {
+            width: 100%;
+            height: 100%;
+        }
+
+        &:hover .workshop__options--window {
+            position: absolute;
+            top: 0;
+            background-color: rgba(146, 140, 104, 0.8);
+            border-radius: 50px;
+            width: 100%;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+    }
+
+    &--window {
+        display: none;
+    }
+
+    &--text {
+        width: 90%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+
+        h3 {
+            font-size: 3rem;
+            font-family: "Amatica SC Bold", sans-serif;
+            margin: 0;
+            text-align: center;
+        }
+
+        p {
+            font-family: "Amatica SC Bold", sans-serif;
+            text-align: center;
+            font-size: 2.25rem;
+        }
+    }
+}
