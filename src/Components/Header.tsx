@@ -1,6 +1,6 @@
 import { FC } from 'react'
-import Logo from '../assets/logo-sadot.svg'
-import Ayelet from '../assets/image 6.png';
+import Logo from '/logo-sadot.svg'
+import Ayelet from '/aelet.png';
 
 const Header: FC = () => {
     return (

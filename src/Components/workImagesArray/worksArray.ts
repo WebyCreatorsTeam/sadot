@@ -1,16 +1,17 @@
-import Frame1 from '/carusel-images/Frame1.png'
-import Frame4 from '/carusel-images/Frame4.png'
+import Flowers from '/carusel-images/flowers.jpg'
+import Flowers1 from '/carusel-images/flowers1.jpg'
+import Lev from '/carusel-images/lev.jpg'
+import Pergula from '/carusel-images/pergula.jpg'
+import Wine from '/carusel-images/wine.jpg'
+import Women from '/carusel-images/women.jpg'
 import { IWorks } from '../interface'
 
 
 export const worksImages: Array<IWorks> = [
-    { img: Frame1, alt: "קישוט פרחים בשיער" },
-    { img: Frame1, alt: "קישוט פרחים בשיער" },
-    { img: Frame1, alt: "קישוט פרחים בשיער" },
-    { img: Frame1, alt: "קישוט פרחים בשיער" },
-    { img: Frame1, alt: "קישוט פרחים בשיער" },
-    { img: Frame4, alt: "לב עם פרחים" },
-    { img: Frame4, alt: "לב עם פרחים" },
-    { img: Frame4, alt: "לב עם פרחים" },
-    { img: Frame4, alt: "לב עם פרחים" },
+    { img: Flowers, alt: "זירת פרחים עגול" },
+    { img: Flowers1, alt: "כדים עם פרחים" },
+    { img: Lev, alt: "זר פרחים בצורת לב" },
+    { img: Pergula, alt: "עיצוב שיער חופה" },
+    { img: Wine, alt: "בקבוק יין עם פרחים" },
+    { img: Women, alt: "אישה עם פרחים" }
 ]

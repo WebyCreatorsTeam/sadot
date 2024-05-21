@@ -27,7 +27,7 @@ const Works: FC = () => {
                     {worksImages.map((wrk, idx) => (
                         <div key={idx} className='ayelet_works__image'>
                             <div>
-                                <img src={wrk.img} alt={wrk.alt} width={410} height={410} />
+                                <img src={wrk.img} alt={wrk.alt} width={phone ? 320 : 410} height={phone ? 320 : 410} />
                             </div>
                         </div>
                     ))}

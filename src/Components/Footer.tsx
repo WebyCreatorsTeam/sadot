@@ -7,8 +7,8 @@ import whatsap from '/icons/whatsap.svg'
 const Footer: FC = () => {
     return (
         <footer>
-            <h2>דרכי הגעה</h2>
             <div className='footer-info'>
+                <p className='footer-info__text'>דרכי הגעה</p>
                 <div>
                     <a href="https://maps.app.goo.gl/f54FHP9cDHFJTjy49">
                         <img src={waze} alt="" width={50} height={50} />
@@ -18,8 +18,8 @@ const Footer: FC = () => {
                     <img src={path} alt="" width={50} height={50} />
                 </div>
             </div>
-            <p>מושב שוקדה</p>
             <div className='footer-info'>
+                <p className='footer-info__text'>מושב שוקדה</p>
                 <div>
                     <img src={whatsap} alt="" width={50} height={50} />
                 </div>
@@ -29,7 +29,7 @@ const Footer: FC = () => {
                     </a>
                 </div>
             </div>
-            <div>
+            <div className='payment-details'>
                 <p>
                     לתשלום בביט ניתן להעביר למספר טלפון:
                 </p>

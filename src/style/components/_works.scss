@@ -5,13 +5,20 @@
 
     &__image {
         div {
-            max-width: 400px;
+            max-width: 410px;
             margin: 0% auto;
+            min-width: 320px;
         }
 
         img {
             width: 100%;
             height: 100%;
+            border-radius: 60px;
+
+            @media screen and (max-width: 1000px) {
+                width: 80%;
+                margin: 0 auto;
+            }
         }
     }
 }
