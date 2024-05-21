@@ -1,8 +1,8 @@
 import { IWorkShop } from "../interface";
-import Keramika from "/workshops-images/keramika.png";
-import Stand from "/workshops-images/stand.png";
-import Twist from "/workshops-images/twist.png";
-import WorkShop from "/workshops-images/workshop.png";
+import Keramika from "/workshops-images/keramika.webp";
+import Stand from "/workshops-images/stand.webp";
+import Twist from "/workshops-images/twist.webp";
+import WorkShop from "/workshops-images/workshop.webp";
 
 
 export const workshopImages: Array<IWorkShop> = [
