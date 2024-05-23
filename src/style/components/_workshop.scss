@@ -57,8 +57,9 @@
 
         h3,
         p {
-            font-family: "Amatica SC Bold", sans-serif;
+            font-family: "Amatica SC Regular", sans-serif;
             text-align: center;
+            font-weight: bold;
         }
 
         h3 {
@@ -68,7 +69,7 @@
 
         p {
             font-size: clamp(1.625rem, 0.641vw + 1.481rem, 2.25rem);
-
+            
             @media screen and (max-width: 768px) {
                 margin: 0;
             }
