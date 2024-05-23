@@ -2,74 +2,76 @@
     margin: 5% auto;
     display: grid;
     justify-items: center;
-    grid-template-columns: repeat(auto-fit, minmax(323px, 1fr));
+    grid-template-columns: 1fr;
+
+    @media screen and (min-width: 768px) {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    @media screen and (min-width: 1440px) {
+        grid-template-columns: repeat(4, 1fr);
+    }
 
     &--item {
         position: relative;
+        margin: 5% 0%;
 
-        @media screen and (max-width: 1300px) {
-            margin: 5% 0%;
-        }
-
-        img {
+        &-image {
             width: 100%;
             height: 100%;
-        }
 
-        &:hover .workshop__options--window {
-            position: absolute;
-            top: 0;
-            background-color: rgba(146, 140, 104, 0.8);
-            border-radius: 50px;
-            width: 100%;
-            height: 100%;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
+            img {
+                width: 100%;
+                height: 100%;
+            }
+        }
+        @media screen and (min-width: 768px) {
+            &:hover .workshop__options--window {
+
+                height: 100%;
+                display: flex;
+            }
         }
     }
 
     &--window {
-        display: none;
+        position: absolute;
+        bottom: 0;
+        background-color: rgba(146, 140, 104, 0.8);
+        border-radius: 50px;
+        width: 100%;
+        height: 40%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
 
-        @media screen and (max-width: 768px) {
-            position: absolute;
-            bottom: 0   ;
-            // margin: 5% 0%;position: absolute;
-            // top: 0;
-            background-color: rgba(146, 140, 104, 0.8);
-            border-radius: 50px;
-            width: 100%;
-            z-index: 100;
-            height: 50%;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-        }
+
+        @media screen and (min-width: 768px) {
+            display: none;
+        }  
     }
 
     &--text {
         width: 90%;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: space-between;
 
-        h3 {
-            // font-size: 3rem;
-            font-size: clamp(1.375rem, 1.667vw + 1rem, 3rem);
-            font-family: "Amatica SC Bold", sans-serif;
-            margin: 0;
-            text-align: center;
-        }
-
+        h3,
         p {
             font-family: "Amatica SC Bold", sans-serif;
             text-align: center;
-            // font-size: 2.25rem;
-            font-size: clamp(1.375rem, 0.897vw + 1.173rem, 2.25rem);
+        }
+
+        h3 {
+            font-size: clamp(1.75rem, 0.513vw + 1.635rem, 2.25rem);
+            margin: 0;
+        }
+
+        p {
+            font-size: clamp(1.625rem, 0.641vw + 1.481rem, 2.25rem);
+
+            @media screen and (max-width: 768px) {
+                margin: 0;
+            }
         }
     }
 }
