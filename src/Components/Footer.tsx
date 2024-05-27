@@ -7,7 +7,6 @@ import whatsap from '/icons/whatsap.svg'
 const Footer: FC = () => {
     const text: string = "היי, פניתי אלייך דרך האתר, אשמח לשמוע פרטים נוספים"
     const sendedText = text.replace(/ /g, "%20")
-    console.log(sendedText)
 
     return (
         <footer>
