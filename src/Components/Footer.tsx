@@ -4,6 +4,7 @@ import waze from '/icons/waze.svg'
 import call from '/icons/call.svg'
 import whatsap from '/icons/whatsap.svg'
 
+
 const Footer: FC = () => {
     const text: string = "היי, פניתי אלייך דרך האתר, אשמח לשמוע פרטים נוספים"
     const sendedText = text.replace(/ /g, "%20")
@@ -35,6 +36,12 @@ const Footer: FC = () => {
                 <a href="tel:0506353830" aria-label="מספר טלפון: 050-635-3830">
                     050-635-3830
                 </a>
+            </div>
+            <div className='created-by'>
+                {/* <p> */}
+                {/* <a href="https://www.weby.team/" target='_blank'>Weby</a> */}
+                {/* </p> */}
+                <p> Created by <a href="https://www.weby.team/" target='_blank'>Weby</a> ©</p>
             </div>
         </footer>
     )
